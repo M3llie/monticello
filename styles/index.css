@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap");
+.screen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/img/header.png), linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  background-size: cover;
+}
+
+.navigation {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  color: #fff;
+}
+.navigation__links {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation__item:hover {
+  transform: scale(1.1);
+}
+.navigation__link {
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navigation__social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-circle {
+  font-size: 9px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.fa-circle:hover {
+  font-weight: 900;
+}
+
+.fab {
+  color: white;
+}
+
+.navigation__social--circle {
+  width: 40px;
+  height: 40px;
+  border: solid 1px;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.slickslider {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slickslider__title {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
+.slickslider__paragraph {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  padding-top: 20px;
+}
+
+.slickslider__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=index.css.map */
