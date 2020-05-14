@@ -13,19 +13,26 @@
 }
 
 .navigation {
-  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 20px;
+  align-self: flex-start;
+  flex: 1;
   color: #fff;
+  padding-top: 40px;
+}
+.navigation__logo:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease 0s;
 }
 .navigation__links {
-  display: flex;
-  max-width: 600px;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
+  list-style: none;
+  transition: all 0.3s ease 0s;
+}
+.navigation__item {
+  display: inline-block;
+  padding: 0 20px;
+  transition: all 0.3s ease 0s;
 }
 .navigation__item:hover {
   transform: scale(1.1);
@@ -46,19 +53,6 @@
   justify-content: space-between;
 }
 
-.fa-circle {
-  font-size: 9px;
-  padding-right: 10px;
-  vertical-align: middle;
-}
-.fa-circle:hover {
-  font-weight: 900;
-}
-
-.fab {
-  color: white;
-}
-
 .navigation__social--circle {
   width: 40px;
   height: 40px;
@@ -70,6 +64,27 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+.navigation__social--circle:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease 0s;
+}
+
+.fab {
+  color: white;
+}
+.fab:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease 0s;
+}
+
+.fa-circle {
+  font-size: 9px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.fa-circle:hover {
+  font-weight: 900;
 }
 
 .slickslider {

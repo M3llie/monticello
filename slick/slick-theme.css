@@ -116,12 +116,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    /* JAG ändrats från 30px till 0px */
+    margin-bottom: 0px;  
 }
 
 .slick-dots
 {
-    /* position: absolute; */
+    /* JAG position: absolute; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +130,7 @@
     justify-content: space-between;
     /* bottom: -25px; */
 
-    /* display: block; */
+    /* JAG display: block; */
 
     width: 100%;
     padding: 0;
@@ -192,7 +193,7 @@
 
     width: 20px;
     height: 20px;
-/* below added to slick */
+/* JAG below added to slick */
     font-family: "Font Awesome 5 Free"; 
     font-size: 12px;
     font-weight: normal; 
@@ -201,7 +202,7 @@
 
     opacity: .25;
 
-/* below added to slick */    
+/* JAG sbelow added to slick */    
     color: #fff;
 
     -webkit-font-smoothing: antialiased;

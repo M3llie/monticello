@@ -18,34 +18,53 @@ $third-color: #fff;
   height: 100vh;
   background-image: url(/images/img/header.png), linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
   background-size: cover;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
 }
 
 
 .navigation{
-  // min-width: 1170px;
-  width: 100vw;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 20px;
+  align-self: flex-start;
+  flex: 1;
   color: $third-color;
 
+  padding-top:40px;
+
+  &__logo:hover{
+    transform: scale(1.1); 
+    transition: all 0.3s ease 0s;
+
+  }
+
   &__links{
-    display: flex;
-    max-width: 600px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+    list-style: none;
+    transition: all 0.3s ease 0s;
+    // display: flex;
+    // max-width: 600px;
+    // width: 100%;
+    // justify-content: space-around;
+    // align-items: center;
     // list-style-type: circle;
 
   }
 
-  &__item:hover{
-    // list-style-type: disc;
-    transform: scale(1.1); 
- 
+  &__item{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s ease 0s;
+  
+    &:hover{
+      // list-style-type: disc;
+      transform: scale(1.1); 
+  
+    }
   }
-
   &__link{
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
@@ -62,23 +81,8 @@ $third-color: #fff;
     width: 160px;
     display: flex;
     justify-content: space-between;
-
   }
 
-}
-
-.fa-circle{
-  font-size: 9px;
-  padding-right: 10px;
-  vertical-align: middle;
-
-  &:hover{
-    font-weight: 900;
-  }
-}
-
-.fab{
-  color: white;
 }
 
 .navigation__social--circle{
@@ -92,8 +96,40 @@ $third-color: #fff;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+
+  &:hover{
+    transform: scale(1.1); 
+    transition: all 0.3s ease 0s;
+  }
 }
 
+// navigation__social
+
+.fab{
+  color: white;
+  
+  &:hover{
+    transform: scale(1.1); 
+    transition: all 0.3s ease 0s;
+  }
+  
+}
+
+
+// navigation__item circles 
+.fa-circle{
+  font-size: 9px;
+  padding-right: 10px;
+  vertical-align: middle;
+
+  &:hover{
+    font-weight: 900;
+   
+  }
+}
+
+
+// slickslider 
 
 .slickslider{
   height: 80vh;
@@ -134,3 +170,23 @@ $third-color: #fff;
   align-items: center;
   justify-content: space-around;
 }
+
+// .nextpage{  SKAPAR EN ANGLE DOWN MED CIRKEL
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   width: 40px;
+//   height: 40px;
+//   border: solid 1px;
+//   border-color: rgba(255, 255, 255, 0.4);
+//   box-sizing: border-box;
+//   border-radius: 50%;
+// }
+
+// .fa-angle-down{
+//   color: $third-color;
+//   font-size: 15px;
+//   line-height: 133%;
+
+// }
