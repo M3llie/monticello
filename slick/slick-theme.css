@@ -116,25 +116,27 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    /* JAG ändrats från 30px till 0px */
-    margin-bottom: 0px;  
+    /* text-align added */
+    text-align: center;
+     /* text-align added */
+    margin-bottom: 30px;
 }
 
 .slick-dots
 {
-    /* JAG position: absolute; */
+    position: absolute;
+    /*  bottom: -25px;
+
+    display: block; original */
+    /* min kod */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 210px;
-    justify-content: space-between;
-    /* bottom: -25px; */
-
-    /* JAG display: block; */
-
+    align-items: flex-end;
+    /* min kod end*/
+    
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin-left: 0;
 
     list-style: none;
 
@@ -193,29 +195,18 @@
 
     width: 20px;
     height: 20px;
-/* JAG below added to slick */
-    font-family: "Font Awesome 5 Free"; 
-    font-size: 12px;
-    font-weight: normal; 
-    content: "\f111";
+
+    content: '•';
     text-align: center;
 
     opacity: .25;
-
-/* JAG sbelow added to slick */    
-    color: #fff;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    font-family: "Font Awesome 5 Free"; 
-    font-size: 14px;
-    font-weight: 900; 
-    content: "\f111";
-    text-align: center;
-
     opacity: .75;
-    color: #fff;
+    color: black;
 }

@@ -42,6 +42,12 @@ $slick-opacity-not-active: 0.25 !default;
 /* Slider */
 
 .slick-list {
+        //jag har ändrat 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        //jag har ändrat slut
     .slick-loading & {
         background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
     }

@@ -6,13 +6,14 @@
 }
 
 .header {
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-image: url(/images/img/header.png), linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
   background-size: cover;
 }
 
 .navigation {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -121,6 +122,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.nextpage {
+  align-self: center;
+}
+
+.fa-angle-down {
+  color: #fff;
+  font-size: 15px;
+  line-height: 133%;
 }
 
 /*# sourceMappingURL=index.css.map */

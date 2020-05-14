@@ -3,7 +3,7 @@
 {
     position: relative;
 
-    display: block;
+    display: flex;
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -20,6 +20,7 @@
 
 .slick-list
 {
+  
     position: relative;
 
     display: block;
@@ -100,7 +101,7 @@
 }
 .slick-initialized .slick-slide
 {
-    /* JAG display: block; */
+    display: block;
 }
 .slick-loading .slick-slide
 {

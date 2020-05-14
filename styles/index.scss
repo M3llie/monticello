@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
 
 
@@ -14,27 +13,26 @@ $third-color: #fff;
 }
 
 .header{
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // width: 100vw;
+  // height: 100vh;
   background-image: url(/images/img/header.png), linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
   background-size: cover;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-
 }
 
 
 .navigation{
-
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   align-self: flex-start;
   flex: 1;
   color: $third-color;
-
   padding-top:40px;
+  
+  
 
   &__logo:hover{
     transform: scale(1.1); 
@@ -50,7 +48,7 @@ $third-color: #fff;
     // width: 100%;
     // justify-content: space-around;
     // align-items: center;
-    // list-style-type: circle;
+
 
   }
 
@@ -58,6 +56,7 @@ $third-color: #fff;
     display: inline-block;
     padding: 0 20px;
     transition: all 0.3s ease 0s;
+    // list-style-type: circle;
   
     &:hover{
       // list-style-type: disc;
@@ -129,8 +128,6 @@ $third-color: #fff;
 }
 
 
-// slickslider 
-
 .slickslider{
   height: 80vh;
   display: flex;
@@ -171,22 +168,13 @@ $third-color: #fff;
   justify-content: space-around;
 }
 
-// .nextpage{  SKAPAR EN ANGLE DOWN MED CIRKEL
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+.nextpage{ 
+  align-self: center;
+}
 
-//   width: 40px;
-//   height: 40px;
-//   border: solid 1px;
-//   border-color: rgba(255, 255, 255, 0.4);
-//   box-sizing: border-box;
-//   border-radius: 50%;
-// }
+.fa-angle-down{
+  color: $third-color;
+  font-size: 15px;
+  line-height: 133%;
 
-// .fa-angle-down{
-//   color: $third-color;
-//   font-size: 15px;
-//   line-height: 133%;
-
-// }
+}
