@@ -5,17 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monticello</title>
   <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/index.css">
   <link rel="shortcut icon" type="image/png" href="images/icons/favicon-blue.png">
   <script src="https://kit.fontawesome.com/709e4c9863.js" crossorigin="anonymous"></script>
-
  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body class="screen">
 
-<header class="header">
-  
+  <header class="header">
   <nav class="navigation">
     <a href="#home"><img class="navigation__logo" src="images/img/logo.svg" alt="logo"></a> 
     <ul class="navigation__links">
@@ -38,7 +36,6 @@
       <a class="navigation__social--circle" href="#"><i class="fab fa-instagram"></i></a>
     </div>
   </nav>
-  <div>
   <div class="slickslider">
       <div class="slickslider__text">
         <h1 class="slickslider__title">Simple & Modern</h1>
@@ -62,13 +59,45 @@
       </div>
   </div>
 
-  </div>
-  <div class="nextpage">
+  <div class="nextpage-angle-down">
    <a class="navigation__social--circle" href=""><i class="fas fa-angle-down"></i></a> 
   </div>
   </header>
-  <main>
+  <main class="main">
+    <section id ="projects" class="projects__wrapper">
+      <h2 class="title__centered">What we do</h2>
+      <div class="projects__left">
+        <div class="projects__image-container">
+          <div class="projects__rectangle"></div>
+          <img class="projects__image" src="images/img/Mask Group.png" alt="">
+        </div>
 
+        <div class="projects__content">
+          <span class="subheader">One World</span>
+          <h3 class="title">Trade Center</h3>
+          <p class="paragraph">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+          <button class="button">More details</button>
+          <span>
+            <i class="fas fa-map-marker-alt"></i>New York City, United States - 1776 feet
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="news-wrapper">
+      <h2 class="title__centered">Latest News</h2>
+      <div class="slickslider--news"> 
+
+      </div>
+
+    </section>
+
+    <!-- <div class="news-slider">
+      <div>hello</div>
+      <div>hi</div>
+      <div>yo</div>
+      <div>moyo</div>
+    </div> -->
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

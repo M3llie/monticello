@@ -117,7 +117,7 @@
 .slick-dotted.slick-slider
 {
     /* text-align added */
-    text-align: center;
+    /* text-align: center; */
      /* text-align added */
     margin-bottom: 30px;
 }
@@ -125,13 +125,13 @@
 .slick-dots
 {
     position: absolute;
-    /*  bottom: -25px;
+     bottom: -25px;
 
-    display: block; original */
+    display: block; 
     /* min kod */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end; */
     /* min kod end*/
     
     width: 100%;
