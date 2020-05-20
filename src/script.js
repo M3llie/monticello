@@ -9,28 +9,12 @@ $(".hero-slider").slick({
   adaptiveHeight: true,
   arrows: false,
   dots: true,
-  pauseOnDotsHover: true,
+  // pauseOnDotsHover: true,
   dotsClass: $(this).toggleClass("rotate-90"),
-  autoplay: true,
-  autoplaySpeed: 4000,
   // dotClass: $.addClass("intro"),
 });
 
 //  ========= Slick Slider  News
-
-// $(".news-slider").slick({
-//   infinite: true,
-//   slidesToShow: 3,
-//   slidesToScroll: 3,
-//   dots: true,
-//   arrows: true,
-//   // autoplay: true,
-//   // autoplaySpeed: 4000,
-//   prevArrow:
-//     '<span class="slide-arrow prev-arrow"><i class="fas fa-angle-left"></i></span>',
-//   nextArrow:
-//     '<span class="slide-arrow next-arrow"><i class="fas fa-angle-right"></i></span>',
-// });
 
 $('.news-slider').slick({
   dots: true,
@@ -40,6 +24,9 @@ $('.news-slider').slick({
   slidesToScroll: 1,
   vertical: false,
   verticalSwiping: false,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  // appendDots: $(this).addClass()('.dots-container'),
     prevArrow:
     '<span class="slide-arrow prev-arrow"><i class="fas fa-angle-left"></i></span>',
   nextArrow:
@@ -68,16 +55,15 @@ $('.news-slider').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
+
+  
 
 //  ========= Smoothe Scroll
 
 $('a[href*="#"]')
-  // Remove links that don't actually link to anything
+
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function (event) {
@@ -87,12 +73,12 @@ $('a[href*="#"]')
         this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
-      // Figure out element to scroll to
+
       let target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-      // Does a scroll target exist?
+
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
+
         event.preventDefault();
         $("html, body").animate(
           {
@@ -100,16 +86,15 @@ $('a[href*="#"]')
           },
           1000,
           function () {
-            // Callback after animation
-            // Must change focus!
+
             let $target = $(target);
             $target.focus();
             if ($target.is(":focus")) {
-              // Checking if the target was focused
+
               return false;
             } else {
-              $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
+              $target.attr("tabindex", "-1"); 
+              $target.focus();
             }
           }
         );
@@ -134,12 +119,12 @@ console.log($('a[href*="#"]'));
 // =========  Map !!!! lägg till ikon
 
 let icon = {
-  url: '<i class="far fa-dot-circle"></i>',
-  scaledSize: new google.maps.Size(40, 40),
+  url: './images/aim.svg',
+  scaledSize: new google.maps.Size(70, 70),
 };
 
 let map = new google.maps.Map(document.getElementById("map"), {
-  center: { lat: -6.15816, lng: 39.19534 },
+  center: { lat: 55.606174, lng: 13.009718},
   zoom: 16,
   styles: [
     {
@@ -390,7 +375,7 @@ let map = new google.maps.Map(document.getElementById("map"), {
 });
 
 let marker = new google.maps.Marker({
-  position: { lat: -6.15815, lng: 39.195344 },
+  position: { lat: 55.608367, lng: 12.999258},
   map: map,
 
   draggable: true,

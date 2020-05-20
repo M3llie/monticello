@@ -92,10 +92,10 @@ img {
 }
 .hero-slider ul li button:hover {
   background-color: white;
+  transition: all 0.3s ease 0s;
 }
 .hero-slider ul li button:focus {
-  transform: scale(1.5);
-  transition: all 0.3s ease 0s;
+  transform: scale(1.2);
 }
 
 .navigation {
@@ -152,6 +152,7 @@ img {
 }
 .navigation__item:hover {
   font-weight: 900;
+  opacity: 50%;
   transform: scale(1.1);
   transition: all 0.3s ease 0s;
 }
@@ -171,7 +172,7 @@ img {
   width: 40px;
   height: 40px;
   border: solid 1px;
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: #FFFFFF;
   box-sizing: border-box;
   border-radius: 50%;
   display: flex;
@@ -182,10 +183,11 @@ img {
 .icon-circle:hover {
   transform: scale(1.1);
   transition: all 0.3s ease 0s;
+  background-color: #FFFFFF;
+  opacity: 50%;
 }
 .icon-circle:focus {
-  text-decoration: underline;
-  color: white;
+  background-color: #FFFFFF;
 }
 
 .fab {
@@ -213,11 +215,14 @@ img {
   text-transform: uppercase;
 }
 .button:hover {
-  background-color: white;
+  background-color: #FFFFFF;
+  opacity: 50%;
+  transform: scale(1.1);
+  transition: all 0.3s ease 0s;
 }
 .button:focus {
-  transform: scale(1.2);
-  transition: all 0.3s ease 0s;
+  background-color: #d8d8d8;
+  opacity: 50%;
 }
 
 .button--project {
@@ -285,7 +290,6 @@ img {
   justify-content: space-between;
   width: 1385px;
   height: 527px;
-  border: solid 1px red;
   box-sizing: content-box;
   align-self: flex-start;
 }
@@ -331,7 +335,6 @@ img {
   position: relative;
   width: 845px;
   height: 527px;
-  border: solid 1px red;
 }
 
 .project__content {
@@ -353,7 +356,6 @@ img {
   /* justify-content: space-between; */
   width: 1385px;
   height: 527px;
-  border: solid 1px red;
   box-sizing: content-box;
   align-self: flex-end;
   position: relative;
@@ -377,11 +379,6 @@ img {
   box-sizing: border-box;
   width: 845px;
   height: 527px;
-  /* width: 100%; */
-  border: solid 1px red;
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  /* position: relative; */
 }
 
 .project__img-rectangle2 {
@@ -519,10 +516,10 @@ img {
 }
 .slick-dots li button:hover {
   background-color: white;
+  transition: all 0.3s ease 0s;
 }
 .slick-dots li button:focus {
   transform: scale(1.2);
-  transition: all 0.3s ease 0s;
 }
 
 .slick-dots li {
@@ -750,6 +747,13 @@ form .error {
   width: 140px;
   align-self: flex-end;
   background-color: transparent;
+}
+.button__submit:hover {
+  background-color: white;
+  transition: all 0.3s ease 0s;
+}
+.button__submit:focus {
+  background-color: #d8d8d8;
 }
 
 .map-size {
