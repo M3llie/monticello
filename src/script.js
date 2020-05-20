@@ -388,8 +388,30 @@ console.log(icon);
 
 // =============== form validation
 
+$(function () {
+  $("form[name='form']").validate({
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+
+        email: true,
+      },
+    },
+    messages: {
+      name: "Please enter your name",
+      email: "Please enter a valid email address",
+    },
+    submitHandler: function (form) {
+      form.submit();
+
+    },
+  });
+});
+
+
 // $(function () {
-//   $("form[name='form']").validate({
+//   $("form[name='add']").validate({
 //     rules: {
 //       name: "required",
 //       email: {
@@ -404,29 +426,17 @@ console.log(icon);
 //     },
 //     submitHandler: function (form) {
 //       form.submit();
-
+//     if (form.submit() === true){
+//       alert('thanks!')
+//     }
 //     },
 //   });
 // });
 
-$(function () {
-  $("form[name='form']").validate({
-    rules: {
-      name: "required",
-      button: "button-send",
-      email: {
-        required: true,
-        button: true,
-        email: true,
-      },
-    },
-    messages: {
-      name: "Please enter your name",
-      email: "Please enter a valid email address",
-      button: "Thanks",
-    },
-    submitHandler: function (form) {
-      form.submit();
-    },
-  });
-});
+
+
+
+
+
+
+

@@ -41,7 +41,7 @@
           <a class="icon-circle" href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </nav>
-      <!-- <div class="hero-slider-container">  -->
+ 
       <div class="hero-slider">
         <div class="hero-slider__item">
           <h1 class="hero-slider__title">Simple & Modern</h1>
@@ -66,12 +66,12 @@
           <p class="hero-slider__text">and be as colorful as you like</p>
         </div>
       </div>
+
       <div class="navigation__angle-down">
-        <a class="icon-circle" href="#projects"
-          ><i class="fas fa-angle-down"></i
-        ></a>
+        <a class="icon-circle" href="#projects">
+          <i class="fas fa-angle-down"></i>
+        </a>
       </div>
-      <!-- </div> -->
     </header>
 
     <main class="main-container">
@@ -104,10 +104,9 @@
               the right frame of mind. The truth is, our thoughts are very
               powerful.
             </p>
-            <button class="button button--project">MORE DETAILS</button>
-            <span class="project__adress"
-              ><i class="fas fa-map-marker-alt"></i>New York City, United States
-              - 1776 feet
+            <button class="button button__project">MORE DETAILS</button>
+            <span class="project__adress"><i class="fas fa-map-marker-alt"></i>
+              New York City, United States - 1776 feet
             </span>
           </div>
         </div>
@@ -124,9 +123,8 @@
               network may help.
             </p>
             <button class="button button--project">MORE DETAILS</button>
-            <span class="project__adress"
-              ><i class="fas fa-map-marker-alt"></i>Hong Kong - 1588 feet</span
-            >
+            <span class="project__adress"><i class="fas fa-map-marker-alt">   
+            </i>Hong Kong - 1588 feet</span>
           </div>
           <div class="project__img-box2">
             <img
@@ -146,7 +144,7 @@
 
       <!--NEWS-->
       <section id="news" class="news">
-        <div class="news-container">
+        <div class="news-slider__container">
           <div class="title__center-box">
             <hr class="title__center--line" />
             <h2 class="title title--white title--padding-top">Latest News</h2>
@@ -326,13 +324,15 @@
             <hr class="title__center--line" />
             <h2 class="title">Gallery</h2>
           </div>
+
           <div class="gallery-grid">
-            <img class="gallery1" src="images/gallery1.png" alt="building" />
-            <img class="gallery2" src="images/gallery2.png" alt="building" />
-            <img class="gallery3" src="images/gallery3.png" alt="building" />
-            <img class="gallery4" src="images/gallery4.png" alt="building" />
-            <img class="gallery5" src="images/gallery5.png" alt="building" />
+            <img class="gallery-grid__item1" src="images/gallery1.png" alt="building" />
+            <img class="gallery-grid__item2" src="images/gallery2.png" alt="building" />
+            <img class="gallery-grid__item3" src="images/gallery3.png" alt="building" />
+            <img class="gallery-grid__item4" src="images/gallery4.png" alt="building" />
+            <img class="gallery-grid__item5" src="images/gallery5.png" alt="building" />
           </div>
+
           <button class="button">See More</button>
         </div>
       </section>
@@ -340,66 +340,68 @@
 
       <section class="contact" id="contact">
         <div id="map" class="map-size"></div>
-        <div class="contact-wrapper">
+
+        <div class="contact__wrapper">
           <div class="title__center-box--contact">
             <hr class="title__center--line" />
             <h2 class="title">Get in Touch</h2>
           </div>
 
-          <div class="contact-info">
-            <div class="contact-left">
-              <div class="contact-content">
-                <p class="contact-text">
-                  <i class="fas contact-icon fa-map-marker-alt"></i>91 Nolan
-                  Extensions Suite 670
+          <div class="contact__info">
+            <div class="contact__left">
+              <div class="contact__content">
+                <p class="contact__text">
+                  <i class="contact__icon  fas fa-map-marker-alt"></i>
+                  91 Nolan Extensions Suite 670
                 </p>
               </div>
-              <div class="contact-content">
-                <p class="contact-text">
-                  <i class="fas contact-icon fa-phone-alt"></i>+001356-868-2454
+              <div class="contact__content">
+                <p class="contact__text"><i class="contact__icon fas fa-phone-alt"></i>
+                  +001356-868-2454
                 </p>
               </div>
-              <div class="contact-content">
-                <p class="contact-text">
-                  <i class="fas contact-icon fa-inbox"></i
-                  >montichello@service.com
+              <div class="contact__content">
+                <p class="contact__text">
+                  <i class="contact__icon fas fa-inbox"></i>
+                  montichello@service.com
                 </p>
               </div>
-              <div class="contact-content">
-                <p class="contact-text">
-                  <i class="far contact-icon fa-clock"></i>From 07:05AM to
-                  19:30PM
+              <div class="contact__content">
+                <p class="contact__text">
+                  <i class="contact__icon far fa-clock"></i>
+                  From 07:05AM to 19:30PM
                 </p>
               </div>
             </div>
-            <form
-              class="contact-right"
+
+            <form 
+              class="contact__form"
               action="#"
               name="form"
               autocomplete="off"
-            >
+              >
               <input type="text" id="name" name="name" placeholder="Name" />
               <input type="email" id="email" name="email" placeholder="Email" />
               <button
                 id="#btn"
-                formaction="#"
-                type="submit"
-                class="button button__submit"
-              >
+                action="#"
+                type="submit" 
+                value="submit"
+                class="comtact__submit"
+                >
                 SUBMIT
-              </button>
+              </button> 
             </form>
           </div>
         </div>
       </section>
       <!--END CONTACT-->
     </main>
-
+    
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__content">
-          <a href="#home"
-            ><img
+          <a href="#home"><img
               class="navigation__logo"
               id="#home"
               src="images/logo.svg"
