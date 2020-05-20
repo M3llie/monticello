@@ -50,7 +50,6 @@ img{
   background-image: url(/images/background-header.png), linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
   background-size: cover;
   min-height: 800px;
-  // height: 100%;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -632,6 +631,12 @@ img{
   }
 }
 
+// trying to add white as active color to show when sliding to next
+// .slick-dots.slick-active li button{
+//   display: block;
+//   background-color: $white;
+// }
+
 .slick-dots li{
  margin: 0;
 }
@@ -721,6 +726,9 @@ img{
   height: 40px;
 }
 
+i{
+  color: $white;
+}
 
 
 

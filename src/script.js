@@ -116,7 +116,7 @@ console.log($('a[href*="#"]'));
 //   )
 // });
 
-// =========  Map !!!! lägg till ikon
+// =========  Map ==========
 
 let icon = {
   url: './images/aim.svg',
