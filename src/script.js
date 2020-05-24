@@ -9,10 +9,13 @@ $(".hero-slider").slick({
   adaptiveHeight: true,
   arrows: false,
   dots: true,
+  // autoplay: true,
+  // autoplaySpeed: 4000,
   // pauseOnDotsHover: true,
   dotsClass: $(this).toggleClass("rotate-90"),
   // dotClass: $.addClass("intro"),
 });
+
 
 //  ========= Slick Slider  News
 
