@@ -123,16 +123,6 @@ img{
 
 }
 
-// .hero-slider li.slick-active button:before{  Not working
-//   background-color: white !important;
-//   opacity: 100%;
-//   width: 10px;
-//   height: 10px;
-//   border-radius: 50%;
-//   left: 1px;
-//   top: 1px;
-// }
-
 
 //===== Navigation ====//
 
@@ -364,7 +354,13 @@ img{
 .title__center--line{
  vertical-align: top;
  width: 100px;
- color: #2C4058;
+ color: $darkBlue;
+}
+
+.title__center--whiteline{
+  vertical-align: top;
+  width: 100px;
+  color: $white;
 }
 
 // ======= ABOUT/ PROJECTS ============//
@@ -627,20 +623,31 @@ img{
     margin-bottom: 50px;
   }
 
+  .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    // border: none;
+    border: 1px solid white;
+    // opacity:100%;
+    text-indent: -9999px;
+    outline: 0;
+    font-size: 0;
+  
+  }
+
 .slick-dots li button:before {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  // border: none;
-  border: 1px solid white;
-  opacity:100%;
-  // background-color: #fff;
+  border: 1px solid $white !important;
+
   text-indent: -9999px;
   outline: 0;
   font-size: 0;
 
   &:hover {
-    background-color: white;
+    background-color: $white;
     transition: all 0.3s ease 0s;
   }
 
@@ -650,19 +657,28 @@ img{
   }
 }
 
-
 .slick-dots li{
  margin: 0;
+ width: 10px;
+ height: 10px;
 }
 .slick-dots li.slick-active button:before{
-  background-color: white !important;
-  opacity: 100%;
+  background-color: $white !important;
+  opacity: 100% !important;;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  left: 1px;
-  top: 1px;
+ 
 }
+
+// .hero-slider li.slick-active button:before{
+//   background-color: $white !important;
+//   // opacity: 100%;
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 50%;
+ 
+// }
 
 .slick-slide {
   margin-left: 30px;
