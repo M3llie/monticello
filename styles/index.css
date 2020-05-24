@@ -546,6 +546,8 @@ img {
 
 .slick-dots li {
   margin: 0;
+  width: 10px;
+  height: 10px;
 }
 
 .slick-dots li.slick-active button:before {
