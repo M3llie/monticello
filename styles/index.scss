@@ -47,7 +47,7 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/images/background-header.png), linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  background-image: url(../images/background-header.png), linear-gradient(225deg, #7E5AFF 16.9%, #55B7FF 83.27%);
   background-size: cover;
   min-height: 800px;
   width: 100%;
@@ -512,7 +512,7 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(/images/background-news.png), linear-gradient(225deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+  background-image: url(../images/background-news.png), linear-gradient(225deg, #24CCFA 11.16%, #3C7FD4 89.18%);
   background-position: bottom;
   width: 100%;
   min-height: 1035px;
@@ -841,7 +841,7 @@ i{
   // padding: 60px 60px 60px 69px;
   position: absolute;
   top: 400px;
-  background-image: url(/images/contact-box-background.png);
+  background-image: url(../images/contact-box-background.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: white;
@@ -974,7 +974,7 @@ form .error{
   min-height: 549px;
   height: 100%;
   width: 100%;
-  background-image: url(/images/background-footer.png), linear-gradient(225deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+  background-image: url(../images/background-footer.png), linear-gradient(225deg, #7E5AFF -2.19%, #55B7FF 103.21%);
   background-size: cover;
   display: flex;
   flex-direction: column;
